@@ -1,19 +1,52 @@
-# 🏥 Hospital Log Archival Script
+Explaining the archive_logs.sh
+ 
+First we created path varibles
 
-## 📄 Overview
-This Bash script automates the process of archiving hospital log files (such as heart rate, temperature, and water usage logs).  
-It moves old log files from the **active logs** folder to the appropriate **archive folder**, renames them with a timestamp, and creates a new empty log file for continued data collection.
+ LOG_PATH="hospital_data/active_logs"
+HEART_ARCHIVE="hospital_data/archived_logs/heart_data_archive"
+TEMP_ARCHIVE="hospital_data/archived_logs/temperature_data_archive"
+WATER_ARCHIVE="hospital_data/archived_logs/water_usage_data_archive"
+ 
+Then initialized file menus to there corresponding numbers
+Once the user picks a number the task is achived and the file name is changed to the correspanding basename. 
 
----
+If the user picks a number that is not an option error message is diplayed.
 
-## ⚙️ Features
-- Interactive menu for choosing which log to archive.  
-- Automatically renames files with a timestamp to prevent overwriting.  
-- Creates a new empty log file after archiving.  
-- Includes error handling for missing directories or invalid input.  
-- Keeps logs organized by category.
+After getting the reslut a timestamp is displayed together with the file.
 
----
+If the file is created successfully the message is displayed.
 
-## 🗂️ Folder Structure
-The script assumes the following directory layout inside your project:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
