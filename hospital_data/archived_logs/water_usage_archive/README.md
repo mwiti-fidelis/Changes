@@ -6,12 +6,6 @@ It moves old water usage log files from the **active logs** folder to the water_
 
 ---
 
-## ⚙️ Features
-- Interactive menu for choosing which log to archive.  
-- Automatically renames files with a timestamp to prevent overwriting.  
-- Creates a new empty log file after archiving.  
-- Includes error handling for missing directories or invalid input.  
-- Keeps logs organized by category.
 
 ---
 
