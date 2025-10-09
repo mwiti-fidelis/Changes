@@ -1,5 +1,5 @@
 # 🏥 Hospital Log Archival Script
-
+# Archive logs 
 ## 📄 Overview
 This Bash script automates the process of archiving hospital log files (such as heart rate, temperature, and water usage logs).  
 It moves old log files from the **active logs** folder to the appropriate **archive folder**, renames them with a timestamp, and creates a new empty log file for continued data collection.
