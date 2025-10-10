@@ -25,26 +25,23 @@ case "$choice" in
 
     1) selected_log="$HEART_LOG"
        log_name="Heart rate"
-       break
        ;;
 
     2) selected_log="$TEMP_LOG"
        log_name="Temperature"
-       break
        ;;
 
     3) selected_log="$WATER_LOG"
        log_name="Water usage"
-       break
        ;;
-    *) echo "Invalid choice: Please enter 1, 2, or 3."
+    *) echo "Invalid choice: Please enter 1, 2, or 3." >&2
        exit 1
 
 esac
 
 #check whether the file exists and print an error message if it does not
 if [ ! -f "selected_log" ]; then
-    echo "log file 'selected_log' not found!"
+    echo "log file '$selected_log' not found!" >&2
     exit 1
 fi
 {
